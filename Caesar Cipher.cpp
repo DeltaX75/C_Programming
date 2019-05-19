@@ -7,15 +7,15 @@ void Encrypt()
 char in[N];
 int d,length,i;
 int t[N];
-printf("ÇëÊäÈëÃ÷ÎÄ\n");
+printf("è¯·è¾“å…¥æ˜Žæ–‡\n");
 gets(in);
-printf("ÇëÊäÈëÆ«ÒÆÁ¿(×¢:ÏòºóÈ¡Õý,ÏòÇ°È¡¸º)\n");
+printf("è¯·è¾“å…¥åç§»é‡(æ³¨:å‘åŽå–æ­£,å‘å‰å–è´Ÿ)\n");
 scanf("%d",&d);
-d%=26; //Èç¹û´óÓÚ26ÎÞÒâÒå
+d%=26; //å¦‚æžœå¤§äºŽ26æ— æ„ä¹‰
 d+=26;
-d%=26; //ÕâÁ½²½ÊÇÎªÁËÈÃdºãÎªÕý,±ÈÈçÏòÇ°2Ïàµ±ÓÚÏòºó24
+d%=26; //è¿™ä¸¤æ­¥æ˜¯ä¸ºäº†è®©dæ’ä¸ºæ­£,æ¯”å¦‚å‘å‰2ç›¸å½“äºŽå‘åŽ24
 length=strlen(in);
-for(i=0;i<=length;i++) //¶Ôin[N]½øÐÐ¸´ÖÆ
+for(i=0;i<=length;i++) //å¯¹in[N]è¿›è¡Œå¤åˆ¶
 {
 t[i]=in[i];
 }
@@ -24,14 +24,14 @@ for(i=0;i<=length;i++)
 if(in[i]>=('a')&&in[i]<=('z'))
 {
 t[i]+=d;
-if(t[i]>'z') //ÕâÑù¾ÍÖ»ÐèÒªÅÐ¶ÏÒ»´ÎÏòºó³¬¹ý'z'µÄÇé¿ö
-t[i]-=26; // charÀàÐÍÄÄÅÂÁÙÊ±¶¼²»ÄÜÔ½½ç128,ËùÒÔÓÃÕûÊýt[N]ÏÈ´úÌæ
+if(t[i]>'z') //è¿™æ ·å°±åªéœ€è¦åˆ¤æ–­ä¸€æ¬¡å‘åŽè¶…è¿‡'z'çš„æƒ…å†µ
+t[i]-=26; // charç±»åž‹å“ªæ€•ä¸´æ—¶éƒ½ä¸èƒ½è¶Šç•Œ128,æ‰€ä»¥ç”¨æ•´æ•°t[N]å…ˆä»£æ›¿
 in[i]=t[i];
 }
 else if(in[i]>=('A')&&in[i]<=('Z'))
 {
 in[i]+=d;
-if(in[i]>'Z') //ÕâÑù¾ÍÖ»ÐèÒªÅÐ¶ÏÒ»´ÎÏòºó³¬¹ý'Z'µÄÇé¿ö
+if(in[i]>'Z') //è¿™æ ·å°±åªéœ€è¦åˆ¤æ–­ä¸€æ¬¡å‘åŽè¶…è¿‡'Z'çš„æƒ…å†µ
 in[i]-=26;
 }
 }
@@ -45,9 +45,9 @@ int i=0,length,t,j,copy[N];
 fp=fopen("password.txt","r");
 if(fp!=NULL)
 {
-while(fscanf(fp,"%c",&ch[i])!=EOF) //¶ÁÈ¡Êý¾Ýµ½Êý×é£¬Ö±µ½ÎÄ¼þ½áÎ²(·µ»ØEOF)
-i++; //×¢Òâ×Ö·û³¤¶È¾ÍÊÇiµÄÖµ
-ch[i]='\0'; //¿É¼Ó¿É²»¼Ó
+while(fscanf(fp,"%c",&ch[i])!=EOF) //è¯»å–æ•°æ®åˆ°æ•°ç»„ï¼Œç›´åˆ°æ–‡ä»¶ç»“å°¾(è¿”å›žEOF)
+i++; //æ³¨æ„å­—ç¬¦é•¿åº¦å°±æ˜¯içš„å€¼
+ch[i]='\0'; //å¯åŠ å¯ä¸åŠ 
 fclose(fp);
 }
 length=i;
@@ -55,13 +55,13 @@ for(i=0;i<=length;i++)
 {
 copy[i]=ch[i];
 }
-for(t=1;t<=26;t++) //Ñ­»·26´Î³öÀ´ËùÓÐ½á¹û
+for(t=1;t<=26;t++) //å¾ªçŽ¯26æ¬¡å‡ºæ¥æ‰€æœ‰ç»“æžœ
 {
 	for(i=0;i<length;i++)
 	{
 		if(ch[i]>='a'&&ch[i]<='z')
 		{
-			copy[i]+=1;  //Õâ¸öµØ·½ÊÇ+=1¶ø²»ÊÇ=+tÒòÎªÃ¿´Îch¶¼»á±ä¶¯
+			copy[i]+=1;  //è¿™ä¸ªåœ°æ–¹æ˜¯+=1è€Œä¸æ˜¯=+tå› ä¸ºæ¯æ¬¡chéƒ½ä¼šå˜åŠ¨
 			if(copy[i]>'z')
 			{copy[i]-=26;}
 			ch[i]=copy[i];
@@ -72,21 +72,20 @@ for(t=1;t<=26;t++) //Ñ­»·26´Î³öÀ´ËùÓÐ½á¹û
 			if(ch[i]>'Z')
 			{ch[i]-=26;}
 		}
-
 	}
-printf("µÚ%2d´Î½á¹û:",t);
+printf("ç¬¬%2dæ¬¡ç»“æžœ:",t);
 puts(ch);
 }
 }
 void Welcome()
 {
-printf("±¾³ÌÐòÓÃÓÚ¼ÓÃÜ/½âÃÜ¿­ÈöÃÜÂë\n");
-printf("ÇëÑ¡Ôñ¹¦ÄÜ\n");
-printf("1.¼ÓÃÜ\t2.½âÃÜ\t3.ËµÃ÷\t4.ÍË³ö\n");
+printf("æœ¬ç¨‹åºç”¨äºŽåŠ å¯†/è§£å¯†å‡¯æ’’å¯†ç \n");
+printf("è¯·é€‰æ‹©åŠŸèƒ½\n");
+printf("1.åŠ å¯†\t2.è§£å¯†\t3.è¯´æ˜Ž\t4.é€€å‡º\n");
 }
 void Help()
 {
-printf("°ÑÃÜÎÄÊäÈëµ½Í¬ÎÄ¼þ¼ÐÄÚpassword.txtÖÐ,Ö±½ÓÑ¡Ôñ\"½âÃÜ\"¼´¿É\n");
+printf("æŠŠå¯†æ–‡è¾“å…¥åˆ°åŒæ–‡ä»¶å¤¹å†…password.txtä¸­,ç›´æŽ¥é€‰æ‹©\"è§£å¯†\"å³å¯\n");
 }
 void UI()
 {
