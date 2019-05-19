@@ -106,5 +106,5 @@ case 2:Decrypt();system("pause");break;
 case 3:Help();system("pause");break;
 default:break;
 }
-return 0;
+	return 0;
 }
