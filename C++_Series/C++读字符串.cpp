@@ -8,7 +8,7 @@ int main()
     int i=0;
     ifstream infile;
     infile.open("D:\\DeltaX\\iStudy\\Competition\\数学建模\\SelfMade\\_04集训4\\Temp\\Temp\\data.txt",ios::in);
- 
+ 	//注意在"字符串双引号内"反斜线是\\两个一起
     while(!infile.eof())            // 若未到文件结束一直循环 
     {
         getline(infile, a[i],'\n');//读取一行，以换行符结束，存入a[]中
@@ -25,4 +25,3 @@ int main()
 	system("pause");
 	return 0;
 }
-
