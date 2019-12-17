@@ -39,7 +39,6 @@ int char_int(char input[])
 
 }
 
-
 float char_float(char input[])
 {
 	int length,i,dot,a[10],b[10],an,bn;
@@ -71,7 +70,6 @@ float char_float(char input[])
 
 }
 
-
 int i_or_f(char in[])
 {
 	int flag=0;		//整数返回0，浮点数返回1
@@ -86,7 +84,6 @@ int i_or_f(char in[])
 	return flag;
 }
 
-
 void Message1()
 {
 	printf("请选择延迟关机的模式\n");
@@ -95,7 +92,6 @@ void Message1()
 	printf("3.按 分钟 进行延迟关机\n");
 	printf("输入数字进行选择\n");
 }
-
 
 void int_to_char(int in,char x[])
 {
@@ -120,5 +116,4 @@ void int_to_char(int in,char x[])
 	{
 		*(x+i) = temp[length - i - 1];
 	}
-
 }
