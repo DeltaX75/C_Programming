@@ -1,23 +1,22 @@
-#include<iostream>	// ±ê×¼Á÷
-#include<fstream>		// ÎÄ¼şÁ÷
-#include<string>		// ×Ö·û´®
+#include<iostream>	// æ ‡å‡†æµ
+#include<fstream>		// æ–‡ä»¶æµ
+#include<string>		// å­—ç¬¦ä¸²
 #include <sstream>
-using namespace std;	// Ê¹ÓÃstdÃüÃû¿Õ¼ä
+using namespace std;	// ä½¿ç”¨stdå‘½åç©ºé—´
 int main()
 {
 	float a[100];
-	int i=0;        //ÁĞ
-	string str;    	//×Ö·û´®
+	int i=0;        //åˆ—
+	string str;    	//å­—ç¬¦ä¸²
 	ifstream inFile;
-	inFile.open("number.txt");	//´ò¿ªÎÄ¼ş
+	inFile.open("number.txt");	//æ‰“å¼€æ–‡ä»¶
 
-	if(inFile.is_open())
+	if(inFile.is_open())	//è‹¥æˆåŠŸæ‰“å¼€æ–‡ä»¶
 	{
-		//Èô³É¹¦´ò¿ªÎÄ¼ş
-		while( !inFile.eof() )	//ÈôÎ´µ½ÎÄ¼ş½áÊø
+		while( !inFile.eof() )	//è‹¥æœªåˆ°æ–‡ä»¶ç»“æŸ
 		{
 			i=0;
-			getline(inFile, str, '\n');	// ¶ÁÈ¡Ò»ĞĞÄÚÈİ£¬´æÈë´æstrÖĞ
+			getline(inFile, str, '\n');	// è¯»å–ä¸€è¡Œå†…å®¹ï¼Œå­˜å…¥å­˜strä¸­
 			istringstream istr(str);
     		while( !istr.eof() )
     		{
@@ -29,8 +28,9 @@ int main()
 	// 		for(int ii=0;ii<i;ii++) 
 	//        	cout << a[ii] <<endl ;
 	}
-	inFile.close();  // ¹Ø±ÕÎÄ¼ş
+	inFile.close();  // å…³é—­æ–‡ä»¶
 
 	system("pause");
 	return 0;
 }
+

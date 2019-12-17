@@ -4,19 +4,19 @@
 using namespace std;
 int main()
 {
-    string a[100];	//²ÉÓÃstringÀàĞÍ,´æ100ĞĞµÄÎÄ±¾,²»ÒªÓÃÊı×é
+    string a[100];	//é‡‡ç”¨stringç±»å‹,å­˜100è¡Œçš„æ–‡æœ¬,ä¸è¦ç”¨æ•°ç»„
     int i=0;
     ifstream infile;
-    infile.open("D:\\DeltaX\\iStudy\\Competition\\ÊıÑ§½¨Ä£\\SelfMade\\_04¼¯Ñµ4\\Temp\\Temp\\data.txt",ios::in);
+    infile.open("D:\\DeltaX\\iStudy\\Competition\\æ•°å­¦å»ºæ¨¡\\SelfMade\\_04é›†è®­4\\Temp\\Temp\\data.txt",ios::in);
  
-    while(!infile.eof())            // ÈôÎ´µ½ÎÄ¼ş½áÊøÒ»Ö±Ñ­»· 
+    while(!infile.eof())            // è‹¥æœªåˆ°æ–‡ä»¶ç»“æŸä¸€ç›´å¾ªç¯ 
     {
-        getline(infile, a[i],'\n');//¶ÁÈ¡Ò»ĞĞ£¬ÒÔ»»ĞĞ·û½áÊø£¬´æÈëa[]ÖĞ
-        i++;						//ÏÂÒ»ĞĞ
+        getline(infile, a[i],'\n');//è¯»å–ä¸€è¡Œï¼Œä»¥æ¢è¡Œç¬¦ç»“æŸï¼Œå­˜å…¥a[]ä¸­
+        i++;		//ä¸‹ä¸€è¡Œ
     }
 
 
-    for(int ii=0;ii<i;ii++)			// ÏÔÊ¾¶ÁÈ¡µÄtxtÄÚÈİ 
+    for(int ii=0;ii<i;ii++)			// æ˜¾ç¤ºè¯»å–çš„txtå†…å®¹ 
     {  
         cout<<a[ii]<< endl;
     }
