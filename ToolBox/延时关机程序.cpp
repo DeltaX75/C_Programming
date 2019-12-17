@@ -48,10 +48,7 @@ int main()
 	int_to_char(t,output);
 
 	Shutdown(output);
-
 //	printf("Your computer will shutdown in \n");
-
-
 	printf("如想终止关机进程，请输入1并回车\n");
 	scanf("%d",&flag);
 	if(flag==1)
@@ -65,7 +62,6 @@ int main()
 	Sleep(3000);
 	return 0;
 }
-
 
 
 void UI()
@@ -153,7 +149,6 @@ int i_or_f(char in[])
 	return flag;
 }
 
-
 void Message1()
 {
 	printf("请选择延迟关机的模式\n");
@@ -162,7 +157,6 @@ void Message1()
 	printf("3.按 分钟 进行延迟关机\n");
 	printf("输入数字进行选择\n");
 }
-
 
 void int_to_char(int in,char x[])
 {
