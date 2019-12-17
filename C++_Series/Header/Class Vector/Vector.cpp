@@ -3,6 +3,7 @@
 #define PI 3.14159265
 double Deg_Rad(double t);
 double Rad_Deg(double t);
+
 vector::vector(double a,double b,double c){
 	x=a,y=b,z=c;
 }
@@ -10,7 +11,7 @@ void vector::display(){
 	//cout<<"x= "<<x<<"	y="<<y<<"	z="<<z<<endl;
 	cout<<x<<"\t"<<y<<"\t"<<z<<endl;
 }
-vector vector::operator*(vector v)	//²æ³ËÖØÔØ
+vector vector::operator*(vector v)	//å‰ä¹˜é‡è½½
 {
 	double newX,newY,newZ;
 	newX = this->y * v.z - this->z * v.y;
@@ -19,7 +20,7 @@ vector vector::operator*(vector v)	//²æ³ËÖØÔØ
 	return vector(newX,newY,newZ);
 }
 
-vector vector::operator+(vector v)	//¼Ó·¨ÖØÔØ ÏòÁ¿¼Ó·¨
+vector vector::operator+(vector v)	//åŠ æ³•é‡è½½ å‘é‡åŠ æ³•
 {
 	double newX,newY,newZ;
 	newX = this->x + v.x;
@@ -43,7 +44,7 @@ void vector::haokan()
 		z=0;
 }
 
-void vector::zhijiao()	//Èç¹ûÊäÈëÇò×ø±êÔò×ª»»³ÉÖ±½Ç×ø±ê
+void vector::zhijiao()	//å¦‚æœè¾“å…¥çƒåæ ‡åˆ™è½¬æ¢æˆç›´è§’åæ ‡
 {
 	double r,theta,phi;
 	r=x;	theta=Deg_Rad(y);	phi=Deg_Rad(z);
