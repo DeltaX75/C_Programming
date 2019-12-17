@@ -1,8 +1,8 @@
 //Point_operatorExample.h
 #include <iostream>
 using namespace std;
-#ifndef POINT
-	#define POINT
+#ifndef _POINT_
+	#define _POINT_
 class Point{
 public:
 	Point();
