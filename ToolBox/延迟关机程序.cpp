@@ -22,7 +22,7 @@ int main()
 	scanf("%d",&flag);
 	getchar();
 
-	printf("ÇëÊäÈëÑÓ³ÙÊ±¼ä\n");
+	printf("è¯·è¾“å…¥å»¶è¿Ÿæ—¶é—´\n");
 	gets(input);
 
 	if(i_or_f(input))
@@ -52,16 +52,16 @@ int main()
 //	printf("Your computer will shutdown in \n");
 
 
-	printf("ÈçÏëÖÕÖ¹¹Ø»ú½ø³Ì£¬ÇëÊäÈë1²¢»Ø³µ\n");
+	printf("å¦‚æƒ³ç»ˆæ­¢å…³æœºè¿›ç¨‹ï¼Œè¯·è¾“å…¥1å¹¶å›è½¦\n");
 	scanf("%d",&flag);
 	if(flag==1)
 	{
 		system("shutdown -a");
-		printf("¹Ø»ú³ÌĞòÒÑÖÕÖ¹!\n");
+		printf("å…³æœºç¨‹åºå·²ç»ˆæ­¢!\n");
 	}
 	else
-		printf("¹Ø»ú³ÌĞòÒÑÉèÖÃÍê³É!\n");
-	printf("³ÌĞò½«ÔÚ3Ãëºó×Ô¶¯ÍË³ö!\n");
+		printf("å…³æœºç¨‹åºå·²è®¾ç½®å®Œæˆ!\n");
+	printf("ç¨‹åºå°†åœ¨3ç§’åè‡ªåŠ¨é€€å‡º!\n");
 	Sleep(3000);
 	return 0;
 }
@@ -70,7 +70,7 @@ int main()
 
 void UI()
 {
-	system("title ÑÓ³Ù¹Ø»ú³ÌĞò-By Walter Brien");
+	system("title å»¶è¿Ÿå…³æœºç¨‹åº-By Walter Brien");
 	system("mode con cols=45 lines=16");
 	system("color f0");
 }
@@ -141,7 +141,7 @@ float char_float(char input[])
 
 int i_or_f(char in[])
 {
-	int flag=0;		//ÕûÊı·µ»Ø0£¬¸¡µãÊı·µ»Ø1
+	int flag=0;		//æ•´æ•°è¿”å›0ï¼Œæµ®ç‚¹æ•°è¿”å›1
 	int length,i;
 	length = strlen(in);
 	for(i=0;i<length;++i)
@@ -156,11 +156,11 @@ int i_or_f(char in[])
 
 void Message1()
 {
-	printf("ÇëÑ¡ÔñÑÓ³Ù¹Ø»úµÄÄ£Ê½\n");
-	printf("1.°´ Ğ¡Ê± ½øĞĞÑÓ³Ù¹Ø»ú\n");
-	printf("2.°´   Ãë ½øĞĞÑÓ³Ù¹Ø»ú\n");
-	printf("3.°´ ·ÖÖÓ ½øĞĞÑÓ³Ù¹Ø»ú\n");
-	printf("ÊäÈëÊı×Ö½øĞĞÑ¡Ôñ\n");
+	printf("è¯·é€‰æ‹©å»¶è¿Ÿå…³æœºçš„æ¨¡å¼\n");
+	printf("1.æŒ‰ å°æ—¶ è¿›è¡Œå»¶è¿Ÿå…³æœº\n");
+	printf("2.æŒ‰   ç§’ è¿›è¡Œå»¶è¿Ÿå…³æœº\n");
+	printf("3.æŒ‰ åˆ†é’Ÿ è¿›è¡Œå»¶è¿Ÿå…³æœº\n");
+	printf("è¾“å…¥æ•°å­—è¿›è¡Œé€‰æ‹©\n");
 }
 
 
@@ -189,3 +189,4 @@ void int_to_char(int in,char x[])
 	}
 
 }
+
