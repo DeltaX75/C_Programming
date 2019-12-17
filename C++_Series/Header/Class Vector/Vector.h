@@ -2,27 +2,27 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-#ifndef VECTOR
-#define VECTOR
-class vector{
-public:
-	vector(){x=y=z=0;}		//Ä¬ÈÏ¹¹Ôìº¯ÊıÁãÏòÁ¿
-	vector(double a,double b,double c);
-	void setX(double t){x=t;}
-	void setY(double t){y=t;}
-	void setZ(double t){z=t;}
-	void set(double a,double b,double c){x=a,y=b,z=c;}
-	void display();
-	double getX(){return x;}
-	double getY(){return y;}
-	double getZ(){return z;}
-	void Default(){x=y=z=0;}	//³õÊ¼»¯ÏòÁ¿
-	vector operator *(vector v);
-	vector operator +(vector v);
-	void zhijiao();		//×ª»¯ÎªÖ±½Ç×ø±ê
-	void haokan();		//°ÑÔ¼µÈÓÚ0µÄÊı±ä³É0
-	double module();	//ÏòÁ¿µÄÄ£³¤¼ÆËã
-private:
-	double x,y,z;
-};
+#ifndef _VECTOR_
+	#define _VECTOR_
+	class vector{
+	public:
+		vector(){x=y=z=0;}		//é»˜è®¤æ„é€ å‡½æ•°é›¶å‘é‡
+		vector(double a,double b,double c);
+		void setX(double t){x=t;}
+		void setY(double t){y=t;}
+		void setZ(double t){z=t;}
+		void set(double a,double b,double c){x=a,y=b,z=c;}
+		void display();
+		double getX(){return x;}
+		double getY(){return y;}
+		double getZ(){return z;}
+		void Default(){x=y=z=0;}	//åˆå§‹åŒ–å‘é‡
+		vector operator *(vector v);
+		vector operator +(vector v);
+		void zhijiao();		//è½¬åŒ–ä¸ºç›´è§’åæ ‡
+		void haokan();		//æŠŠçº¦ç­‰äº0çš„æ•°å˜æˆ0
+		double module();	//å‘é‡çš„æ¨¡é•¿è®¡ç®—
+	private:
+		double x,y,z;
+	};
 #endif
