@@ -1,24 +1,9 @@
-#include <iostream>
-using namespace std;
-class Point{
-public:
-	Point(){x=0,y=0;}
-	Point(float a,float b);
-	void set(float m,float n);
-	void display();
-	float getX(){return x;}
-	float getY(){return y;}
-	Point operator +(Point p);
-	Point operator -(Point p);
-	Point operator ++(int);	//后缀自增p++
-	Point operator ++();	//前置自增++p
-	Point operator --(int);
-	Point operator --();
-	bool operator ==(Point p);
-	Point operator =(Point p);
-private:
-	float x,y;
-};
+//Point_operatorExample.cpp
+#include "Point_operatorExample.h"
+Point::Point()
+{
+	x=0,y=0;
+}
 Point::Point(float a,float b)
 {  
 	x=a,y=b;
@@ -79,21 +64,12 @@ Point Point::operator=(Point p)
 	return *this;
 }
 
-class Line{
-public:
-	Line():p1(2,25),p2(){}
-	Line(Point a,Point b):p1(a),p2(b){}
-	void display();
-private:
-	Point p1,p2;
-};
-void Line::display(){
-	cout<<"Point A: "<<"("<<p1.getX()<<','<<p1.getY()<<")"<<endl;
-	cout<<"Point B: "<<"("<<p2.getX()<<','<<p2.getY()<<")"<<endl;
+float Point::getX()
+{
+	return x;
 }
 
-int main(){
-
-    system("pause");
-    return 0;
+float Point::getY()
+{
+	return y;
 }
