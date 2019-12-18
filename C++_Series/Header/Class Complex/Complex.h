@@ -2,8 +2,8 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-#ifndef COMPLEX
-#define COMPLEX
+#ifndef _COMPLEX_
+	#define _COMPLEX_
 class Complex{
 public:
 	Complex();
