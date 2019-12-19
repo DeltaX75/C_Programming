@@ -1,8 +1,9 @@
 #include "AutoDisplay.h"
-void main()
+int main()
 {
 	UI();
 	//testDisplay();
 	Xh();
 	system("pause");
+	return 0;
 }
