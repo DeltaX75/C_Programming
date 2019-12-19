@@ -12,14 +12,16 @@ public:
 	void set(double r,double i);
 	void setRe(double r);
 	void setIm(double i);
+	Complex Conjugate();	//取共轭复数
 	double getRe();
 	double getIm();
-	Complex operator*(Complex a);
-	Complex operator+(Complex a);
-	Complex operator-(Complex a);
-	Complex operator/(Complex a);
+	Complex operator*(Complex z);
+	Complex operator+(Complex z);
+	Complex operator-(Complex z);
+	Complex operator/(Complex z);
+	Complex operator=(Complex z);
 	double module();
-	~Complex();
+//	~Complex();
 private:
 	double re,im;
 };
