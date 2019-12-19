@@ -58,7 +58,7 @@ void single_display(char a[],int t)
 
 void Xh()
 {
-	printf("本程序用于输出星花\n");
+	printf("用于输出星花\n");
 	printf("请输入你需要几行:");
 	int k1,k2,n;
 	scanf("%d",&n);
