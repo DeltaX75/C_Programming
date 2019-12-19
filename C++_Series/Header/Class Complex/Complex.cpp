@@ -26,9 +26,9 @@ Complex Complex::operator*(Complex z)
 	b = this->im;
 	c = z.re;
 	d = z.im;
-	this->re = a*c - b*d;
-	this->im = a*d + b*c;
-	return *this;
+	//this->re = a*c - b*d;
+	//this->im = a*d + b*c;
+	return Complex(a*c - b*d , a*d + b*c);
 }
 
 Complex Complex::operator/(Complex z)
@@ -43,9 +43,9 @@ Complex Complex::operator/(Complex z)
 	p = 1 / (c*c + d+d);
 	m = a*c + b*d;
 	n = b*c - a*d;
-	this->re = p*m;
-	this->im = p*n;
-	return *this;
+	//this->re = p*m;
+	//this->im = p*n;
+	return Complex( p*m , p*n );
 }
 
 
@@ -55,4 +55,6 @@ Complex Complex::operator=(Complex z)
 	this->im = z.im;
 	return *this;
 }
+
+
 
