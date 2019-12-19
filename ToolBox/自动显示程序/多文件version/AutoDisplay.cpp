@@ -49,7 +49,6 @@ void testDisplay()
 	Sleep(2000);
 }
 
-
 void single_display(char a[],int t)
 {
 	printf(a);
@@ -63,15 +62,12 @@ void Xh()
 	int k1,k2,n;
 	scanf("%d",&n);
 		for(k1=1;k1<=n;k1++)
-		{	printf("\t\t\t");
-			for(k2=1;k2<=k1;k2++)
-			{
-				putchar('\b');
-			}
-			for(k2=1;k2<=k1*2-1;k2++)
-			{
-			single_display("*",10);
-			}
+		{
+			printf("\t\t\t");
+				for(k2=1;k2<=k1;k2++)
+						putchar('\b');
+				for(k2=1;k2<=k1*2-1;k2++)
+					single_display("*",50);
 			printf("\n");
-			}
+		}
 }
