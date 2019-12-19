@@ -31,6 +31,24 @@ Complex Complex::operator*(Complex z)
 	return *this;
 }
 
+Complex Complex::operator/(Complex z)
+{
+	if(z.re == z.im && z.re ==0)
+		return Complex(0,0);
+	float a,b,c,d,m,n,p;
+	a = this->re;
+	b = this->im;
+	c = z.re;
+	d = z.im;
+	p = 1 / (c*c + d+d);
+	m = a*c + b*d;
+	n = b*c - a*d;
+	this->re = p*m;
+	this->im = p*n;
+	return *this;
+}
+
+
 Complex Complex::operator=(Complex z)
 {
 	this->re = z.re;
