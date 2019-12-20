@@ -1,3 +1,4 @@
+# [Walter Brien's Coding Page](www.baidu.com)
 # C_Programming
 A First repository of DeltaX. <br>
 C/C++ Code Here. <br>
