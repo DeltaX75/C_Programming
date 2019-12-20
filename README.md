@@ -9,6 +9,7 @@ Let's get started :)
     
     
 ## C Programming Language
-
+包含C语言的代码，后缀名为.c
 ## C++ Programming Language
+包含C++的代码，后缀名为.cpp
 
