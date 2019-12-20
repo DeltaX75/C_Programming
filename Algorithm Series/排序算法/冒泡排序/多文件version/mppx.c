@@ -16,3 +16,4 @@ void Sort(int x[])
 			if(x[j] > x[j+1])
 				Swap(&x[j],&x[j+1]);
 }
+
