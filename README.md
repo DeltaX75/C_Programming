@@ -27,4 +27,4 @@ Let's get started :)
 ## C++ Programming Language
 包含C++的代码，后缀名为.cpp <br>
     `C++的头文件.h，主要存放类的声明。
-    而源文件.c，则存放类的定义。`
+    而源文件.cpp，则存放类的定义。`
