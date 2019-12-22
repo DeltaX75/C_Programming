@@ -15,7 +15,6 @@ int main()
         i++;		//下一行
     }
 
-
     for(int ii=0;ii<i;ii++)			// 显示读取的txt内容 
     {  
         cout<<a[ii]<< endl;
@@ -25,3 +24,4 @@ int main()
 	system("pause");
 	return 0;
 }
+
