@@ -1,5 +1,4 @@
 #include "Display.h"
-
 int main()
 {
 	UI();
@@ -27,5 +26,4 @@ int main()
 	system("pause");
 	return 0;
 }
-
 
