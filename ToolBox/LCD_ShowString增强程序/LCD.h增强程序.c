@@ -20,7 +20,7 @@ int main()
 
 void UI()
 {
-	system("title LCD.h增强程序 - By Walter Brien");
+	system("title LCD.h优化程序 - By Walter Brien");
 
 }
 
@@ -33,4 +33,15 @@ void Info()
 
 
 }
+
+void Rectangle(int size,int num)
+{
+
+
+}
+
+struct Rect{
+
+
+};
 
