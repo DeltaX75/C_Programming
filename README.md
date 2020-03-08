@@ -21,7 +21,7 @@ Let's get started :)
 
 ## C Programming Language
 包含C语言的代码，后缀名为.c <br>
-    `C语言的头文件.h，主要存放函数的声明，以及结构体的声明。
+    `C语言的头文件.h，主要存放函数的声明，及结构体的声明。
     而源文件.c，则存放函数和结构体的定义。`
 
 ## C++ Programming Language
