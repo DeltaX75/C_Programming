@@ -1,16 +1,23 @@
 # C_Programming
+
+![Editor](https://img.shields.io/badge/Editor-VS_Code-blue)
+
 A First repository of DeltaX. <br>
 C/C++ Code Here. <br>
 Let's get started :) 
 
 ## 写在前面
+
 ### Introduction
+
     在学习了一年的C/C++之后，我才发现了一个很基础、很荒唐、很致命的问题。
     我之前一直在想，为什么我学的C语言和C++的源文件后缀名都是.cpp，而不是.c这样。
     后来学C++的时候，我发现VC6.0“居然”可以写C++代码，着实让我惊讶了一把。
     我们学的C语言，用到VC6.0，文件的建立，居然用的是C++的向C兼容，而不是“纯正的”C语言。
     接下来要学单片机，看到满屏的.c和.h扩展名，我意识到……这样基本的概念一定要搞清楚。
+    
 ### 这个收集箱的约定 / 一些好的习惯
+
     依旧是学了一年的C/C++，直到最近，我才意识到，文件关联(多文件)，是一件比较重要的事。
     之前一直把所有代码写到一个main里，着实不是一个好的选择。
     我曾经想做一个ToolBox的工具箱程序集合，可以包含平时帮我简化运算或有意思的小程序们。
@@ -20,11 +27,13 @@ Let's get started :)
 
 
 ## C Programming Language
+
 包含C语言的代码，后缀名为.c <br>
     `C语言的头文件.h，主要存放函数的声明，及结构体的声明。
     而源文件.c，则存放函数和结构体的定义。`
 
 ## C++ Programming Language
+
 包含C++的代码，后缀名为.cpp <br>
     `C++的头文件.h，主要存放类的声明。
     而源文件.cpp，则存放类的定义。`
